@@ -1,0 +1,3 @@
+These are the videos compensated with a naive phase correlation method using the cv2 library in Python.
+It applies a Hamming window to two consecutive frames, calculates the Fourier transform, and then the normalized cross-power spectrum of the first spectrum and the complex conjugate of the second. It then applies the inverse Fourier transform in order to obtain a translation vector.
+It is "naive" since it adds the correction to the previously corrected frame, making no distinction between camera shake and voluntary camera movement, thus ending with a heavily cropped frame filled with black pixels.
